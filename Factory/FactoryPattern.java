@@ -4,12 +4,11 @@ interface Vehicle {
 }
 
 class Car implements Vehicle {
-
+    
     @Override
     void drive() {
         System.out.println("driving car!!!");
     }
-
 }
 
 class Truck implements Vehicle {
