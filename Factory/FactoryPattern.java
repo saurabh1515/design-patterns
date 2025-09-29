@@ -6,7 +6,7 @@ interface Vehicle {
 class Car implements Vehicle {
     
     @Override
-    void drive() {
+    public void drive() {
         System.out.println("driving car!!!");
     }
 }
@@ -14,7 +14,7 @@ class Car implements Vehicle {
 class Truck implements Vehicle {
 
     @Override
-    void drive() {
+    public void drive() {
         System.out.println("driving truck!!!");
     }
 }
@@ -32,7 +32,14 @@ class VehicleFactory {
     }
 }
 
-// driver code
-Vehicle vehicle = VehicleFactory.getVehicle("car");
-vehicle.drive();
+public class FactoryPattern {
+    public static void main(String[] args) {
+        Vehicle car = VehicleFactory.getVehicle("car");
+        car.drive();
+
+        Vehicle truck = VehicleFactory.getVehicle("truck");
+        truck.drive();
+    }
+}
+
 

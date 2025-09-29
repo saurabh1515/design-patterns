@@ -33,8 +33,13 @@ class MilkDecorator implements Coffee {
     }
 }
 
-// driver code
-Coffee coffee = new SimpleCoffee();
-coffee = new MilkDecorator(coffee);
+public class Decorator {
 
-System.out.println(coffee.getDescription() + " $" + coffee.getCost());
+    public static void main(String[] args) {
+        // driver code
+        Coffee coffee = new SimpleCoffee();
+        coffee = new MilkDecorator(coffee);
+
+        System.out.println(coffee.getDescription() + " $" + coffee.getCost());
+    }
+}

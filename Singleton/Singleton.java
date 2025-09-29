@@ -1,4 +1,5 @@
-class Singleton {
+
+public class Singleton {
 
     private static Singleton instance;
 
@@ -6,16 +7,14 @@ class Singleton {
 
     public static Singleton getInstance( ) {
         if( instance == null) {
-            instance = new Singleton();
+            synchronized (Singleton.class) {
+                if( instance == null) {
+                    instance = new Singleton();
+                }
+            }
         }
         return instance;
     }
 
 }
 
-public class Main {
-    public static void main(String[] args) {
-        Singleton singleton = Singleton.getInstance();
-        System.out.println(singleton);
-    }
-}
