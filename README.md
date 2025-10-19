@@ -7,8 +7,10 @@ This repository contains examples of commonly used design patterns implemented i
 
 - [Introduction](#introduction)
 - [Design Patterns](#design-patterns)
-  - [Builder Pattern](#builder-pattern)
-  - [Strategy Pattern](#strategy-pattern)
+    - [Factory Pattern](#factory-pattern)
+    - [Decorator Pattern](#decorator-pattern)
+    - [Builder Pattern](#builder-pattern)
+    - [Strategy Pattern](#strategy-pattern)
 - [How to Run](#how-to-run)
 - [Contributing](#contributing)
 - [License](#license)
